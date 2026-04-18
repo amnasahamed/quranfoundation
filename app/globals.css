@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #0F1A14;
+  --color-surface: #1A2E22;
+  --color-surface-elevated: #243828;
+  --color-primary: #4ADE80;
+  --color-accent: #D4A843;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: #F0F4F0;
+}
+
+.safe-area-bottom {
+  padding-bottom: max(env(safe-area-inset-bottom), 0px);
+}
